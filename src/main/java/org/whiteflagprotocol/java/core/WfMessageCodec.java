@@ -41,6 +41,10 @@ public final class WfMessageCodec {
     /* PUBLIC STATIC METHOS */
 
     /**
+     * 
+     * P-COMPLETE: wf_codec::encoding::Encoding::encode
+     * link: https://github.com/fennelLabs/fennel-lib/blob/master/src/whiteflag/wf_codec/encoding.rs#L42
+     * 
      * Encodes a Whiteflag message field to compressed binary representation
      * @since 1.1
      * @param field the message field to be encoded
@@ -87,6 +91,10 @@ public final class WfMessageCodec {
     }
 
     /**
+     * 
+     * P-COMPLETE: wf_codec::encoding::Encoding::decode
+     * link: https://github.com/fennelLabs/fennel-lib/blob/master/src/whiteflag/wf_codec/encoding.rs#L54
+     * 
      * Sets the field value from a binary buffer
      * @since 1.1
      * @param field the field for which to decode the binary value
@@ -267,6 +275,10 @@ public final class WfMessageCodec {
     }
 
     /**
+     * 
+     * P-COMPLETE: wf_codec::latlong::encode_latlong
+     * link: https://github.com/fennelLabs/fennel-lib/blob/master/src/whiteflag/wf_codec/latlong.rs#L8
+     * 
      * Encodes a datum string into binary buffer
      * @since 1.1
      * @param datumstr the datum string to encode
@@ -293,6 +305,10 @@ public final class WfMessageCodec {
     /* NESTED CLASSES */
 
     /**
+     * 
+     * P-COMPLETE: wf_codec::encoding
+     * link: https://github.com/fennelLabs/fennel-lib/blob/master/src/whiteflag/wf_codec/encoding.rs#L118
+     * 
      * Whiteflag message compressed field encodings
      * 
      * <p> Whiteflag fields use these compressed encodings, as defined for
@@ -414,6 +430,10 @@ public final class WfMessageCodec {
         }
 
         /**
+         * 
+         * P-COMPLETE: wf_codec::encoding::Encoding::bit_length
+         * link: https://github.com/fennelLabs/fennel-lib/blob/master/src/whiteflag/wf_codec/encoding.rs#L110
+         * 
          * Returns the bit length of a field for a given encoding and unencoded field byte length
          * @param byteLength the number of bytes in the unencoded field
          * @return the number of bits in a compressed encoded field
