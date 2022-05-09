@@ -269,6 +269,9 @@ public final class WfBinaryBuffer {
     }
 
     /**
+     * 
+     * P-COMPLETE: https://github.com/fennelLabs/fennel-lib/blob/master/src/whiteflag/wf_codec/common.rs#L20
+     * 
      * Converts a hexadecimal string to a byte array
      * @param hexstr the hexadecimal string
      * @return a byte array
@@ -292,6 +295,9 @@ public final class WfBinaryBuffer {
     }
 
     /**
+     * 
+     * P-COMPLETE: https://github.com/fennelLabs/fennel-lib/blob/master/src/whiteflag/wf_codec/common.rs#L4
+     * 
      * Converts a byte array to a hexadecimal string
      * @param byteArray the byte array
      * @return a hexadecimal string
@@ -308,6 +314,9 @@ public final class WfBinaryBuffer {
     }
 
     /**
+     * 
+     * P-COMPLETE: https://github.com/fennelLabs/fennel-lib/blob/master/src/whiteflag/wf_codec/common.rs#L125
+     * 
      * Shifts bits in a byte array to the right modulo 8
      * @param byteArray the byte array to be right shifted
      * @param shift the nummber of bits to be right shifted by modulo 8 bits
@@ -331,6 +340,9 @@ public final class WfBinaryBuffer {
     }
 
     /**
+     * 
+     * P-COMPLETE: https://github.com/fennelLabs/fennel-lib/blob/master/src/whiteflag/wf_codec/common.rs#L152
+     * 
      * Shifts bits in a byte array to the left modulo 8
      * @param byteArray the byte array to be left shifted
      * @param shift the nummber of bits to be left shifted by modulo 8 bits
@@ -367,6 +379,9 @@ public final class WfBinaryBuffer {
     }
 
     /**
+     * 
+     * P-COMPLETE: https://github.com/fennelLabs/fennel-lib/blob/master/src/whiteflag/wf_codec/common.rs#L232
+     * 
      * Appends the specified number of bits from a bytes array to the binary buffer
      * @param byteArray the byte array with the bits to be appended
      * @param nBits the number of bits to be appended from the byte array
@@ -396,6 +411,9 @@ public final class WfBinaryBuffer {
     }
 
     /**
+     * 
+     * P-COMPLETE: https://github.com/fennelLabs/fennel-lib/blob/master/src/whiteflag/wf_codec/common.rs#L183
+     * 
      * Returns a byte array with a subset of the bits in the buffer
      * @param startBit the first bit of the subset to extract
      * @param bitLength the length of the subset, i.e. the number of bits to extract
@@ -436,6 +454,9 @@ public final class WfBinaryBuffer {
     /* PROTECTED STATIC METHODS */
 
     /**
+     * 
+     * P-COMPLETE: https://github.com/fennelLabs/fennel-lib/blob/master/src/whiteflag/wf_codec/common.rs#L258
+     * 
      * Concatinates two bitsets
      * @param byteArray1 byte array containing the first bitset
      * @param nBits1 number of bits in the first bitset, i.e. which bits to take from the first byte array
@@ -484,7 +505,11 @@ public final class WfBinaryBuffer {
         return cropBits(newByteArray, bitLength);
     }
 
+
     /**
+     * 
+     * P-COMPLETE https://github.com/fennelLabs/fennel-lib/blob/master/src/whiteflag/wf_codec/common.rs#L87
+     * 
      * Shortens the byte array to fit the length of the used bits
      * @param byteArray the byte array containing the bitset
      * @param bitLength the bit length of the buffer (i.e. the number of used bits in the bitset), or, if negative, the number of bits to remove (i.e. the number of unused bits in the bitset)
@@ -522,6 +547,9 @@ public final class WfBinaryBuffer {
     /* PRIVATE STATIC METHODS */
 
     /**
+     * 
+     * P-COMPLETE: https://github.com/fennelLabs/fennel-lib/blob/master/src/whiteflag/wf_codec/common.rs#L79
+     * 
      * Calculates the number of bytes required to hold the given number of bits
      * @param bitLength the bit length of a buffer
      * @return the byte length of the buffer
