@@ -223,6 +223,9 @@ public final class WfBinaryBuffer {
     }
 
     /**
+     * 
+     * P-COMPLETE: https://github.com/fennelLabs/whiteflag-rust/pull/14
+     * 
      * Encodes a Whiteflag message field and adds it to the end of the binary buffer
      * @param field the next message field to be encoded and added to the buffer
      * @return this binary buffer
